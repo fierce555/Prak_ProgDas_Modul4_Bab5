@@ -48,4 +48,26 @@ int main() {
         cout << "Pilihan Anda: ";
         cin >> pilihan;
 
+        switch (pilihan) {
+            case 1:
+                cout << "Masukkan batas atas bilangan prima: ";
+                cin >> batasPrima;
+                tampilkanPrima(batasPrima); // Memanggil method tampilkanPrima
+                break;
+            case 2:
+                cout << "Masukkan bilangan pertama: ";
+                cin >> bilangan1;
+                cout << "Masukkan bilangan kedua: ";
+                cin >> bilangan2;
+                tampilkanFPB(bilangan1, bilangan2); // Memanggil method tampilkanFPB
+                break;
+            case 3:
+                cout << "Terimakasih!" << endl;
+                break;
+            default:
+                cout << "Pilihan tidak valid. Silahkan coba lagi." << endl;
+        }
+    } while (pilihan != 3);
 
+    return 0;
+}
