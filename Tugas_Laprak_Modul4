@@ -33,4 +33,19 @@ int cariFPB(int a, int b) {
     }
     return a;
 }
+void tampilkanFPB(int a, int b) {
+    cout << "FPB dari " << a << " dan " << b << " adalah: " << cariFPB(a, b) << endl;
+}
+
+int main() {
+    int pilihan, bilangan1, bilangan2, batasPrima;
+
+    do {
+        cout << "\nMenu:" << endl;
+        cout << "1. Tampilkan Bilangan Prima" << endl;
+        cout << "2. Hitung FPB" << endl;
+        cout << "3. Keluar" << endl;
+        cout << "Pilihan Anda: ";
+        cin >> pilihan;
+
 
